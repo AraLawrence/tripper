@@ -1,28 +1,29 @@
-== README
+#Tripr
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+###App Info:
 
-Things you may want to cover:
+###Technologies Utilized:
+*Ruby on Rails
+*OmniAuth (Twitter & Facebook)
+*OAuth
+*Gritter (gem)
+*Tubular (gem)
+*HTML5
+*JavaScript
+*CSS3
+*Materialize
+*Google Fonts
+*Google Maps API
+*Google Places API
 
-* Ruby version
+###Approach Taken
+Ara served as Git Master, Keaton as Project Manager, and Paloma and Taylor served as Developers. We first used Rails to scaffold our project and get set up all the pages that are included in the app. Routes and tables within the database were also designed and incorporated at this time. Afterwards, we implemented the Google Maps & Google Places APIs and tackled setting up OAuth and OmniAuth so users can login via Facebook and Twitter. 
 
-* System dependencies
+###User Stories
+Tripr is for you. It exists to make your roadtrips easier and more enjoyable by allowing you find the best places to eat along your route. Add places to your list and view past trips and stops so you can see where you've been. 
 
-* Configuration
+###Wireframes/ERDs
+http://i.imgur.com/kzrffoz.jpg
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+###Unsolved Problems/Major Hurdles
+We'd like to incorporate the ebaility to be able to tweet your trip details to your followers.
