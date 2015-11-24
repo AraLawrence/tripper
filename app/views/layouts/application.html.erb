@@ -30,12 +30,12 @@
 
   <nav>
     <div class="nav-wrapper black">
-      <a href="/" class="brand-logo center">Tripper</a>
+      <a href="/" class="brand-logo center">Tripr</a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
        <li><a class="waves-effect waves-light btn black" href="/static/new">About Us</a></li>
         <% if @current_user %>
         <li><a href="/auth/logout">LOGOUT</a></li>
-        <li><a href="/trip/triplist"><%= @current_user.name %></a></li>
+        <li><a href="/trip/triplist" class="btn teal waves-effect waves-light"><%= @current_user.name %></a></li>
 
         <% else %>
         <li><a class="waves-effect waves-light btn modal-trigger black" data-backdrop='false' href="#loginModal1">Login</a></li>
@@ -69,7 +69,7 @@
 <script>
 $(document).ready(function() {
   $('#wrapper').tubular({
-    videoId: 'ab0TSkLe-E0',
+    videoId: 'rkkjpDmf7zw',
     wrapperZIndex: 5
   });
    $('.modal-trigger').leanModal();
