@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
-    gflash :error => "You are now logged out"
+    gflash :notice => "You are now logged out"
     redirect_to root_path
   end
 
