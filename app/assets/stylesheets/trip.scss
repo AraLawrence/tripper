@@ -11,7 +11,7 @@
 }
 
 html { 
-  @include cover-background(road);
+  @include cover-background('road.jpg');
 }
 
 body {
