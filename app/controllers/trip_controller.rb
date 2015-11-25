@@ -80,9 +80,13 @@ class TripController < ApplicationController
       @spotList = @client.spots(lat, long, :radius => 3500, :types => ['food','restaurant','meal_takeaway'], :exclude => ['cafe','grocery_or_supermarket','store'])
     end  
     list = []
-    @spotList.each do |d|
-      if d.rating
-        list.push(d)
+    if @spotList.length > 5 
+      @spotList.each do |d|
+        if d.rating
+          if d.price_level
+            list.push(d)
+          end
+        end
       end
     end
     @spotList = list.sort! { |a,b| b.rating <=> a.rating }
@@ -129,9 +133,13 @@ class TripController < ApplicationController
       @spotList = @client.spots(lat, long, :radius => 3500, :types => ['food','restaurant','meal_takeaway'], :exclude => ['cafe','grocery_or_supermarket','store'])
     end  
     list = []
-    @spotList.each do |d|
-      if d.rating
-        list.push(d)
+    if @spotList.length > 5 
+      @spotList.each do |d|
+        if d.rating
+          if d.price_level
+            list.push(d)
+          end
+        end
       end
     end
     @spotList = list.sort! { |a,b| b.rating <=> a.rating }
