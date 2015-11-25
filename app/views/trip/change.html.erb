@@ -14,6 +14,7 @@
       <%= link_to "change", trip_remap_path(params[:id], d.id), class: "btn btn-small teal" %>
       <%= link_to "delete", dest_delete_path(params[:id], d.id), class: "btn btn-small red" %> 
       <% end %>
+      <%= link_to "add another destination", trip_new_path(@trip.id), class: "btn green add-dest" %>
     </div>
   </div>
 </div>
